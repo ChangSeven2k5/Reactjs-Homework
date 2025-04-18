@@ -1,17 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+// import './index.css';
+import App from './components/App/App.js';
 import reportWebVitals from './reportWebVitals';
+// import One from './Example.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+     <React.StrictMode>
+   <App />
+ </React.StrictMode>
+  // <div className='App'>
+  //   <div className='container'>
+  //     <div className='row'>
+  //     <One title="áo thun 1" price="200k" image="https://thoitrangbigsize.vn/wp-content/uploads/2024/12/BSX1456D.jpg"></One>
+  //     <One title="áo thun 2" price="250k" image="https://thoitrangbigsize.vn/wp-content/uploads/2024/12/BSX1456D.jpg"></One>
+  //     <One title="áo thun 3" price="400k" image="https://thoitrangbigsize.vn/wp-content/uploads/2024/12/BSX1456D.jpg"></One>
+  //     <One title="áo thun 4" price="300k" image="https://thoitrangbigsize.vn/wp-content/uploads/2024/12/BSX1456D.jpg"></One>
+  //     <One title="áo thun 5" price="450k" image="https://thoitrangbigsize.vn/wp-content/uploads/2024/12/BSX1456D.jpg"></One>
+  //     </div>
+  //   </div>
+  //   <div>
+  //     <One width="200px" height="200px" backgroundColor="yellow"></One>
+  //   </div>
+  
+  // </div>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
