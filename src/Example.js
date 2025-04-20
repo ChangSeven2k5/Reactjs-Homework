@@ -11,11 +11,11 @@ function One({width, height, backgroundColor}) {
 // function One(props) {
 //     return (
 //         <div>
-            // <div className="">
-            //     <img src={props.image}></img>
-            //     <p>{props.name} </p>
-            //     <p>{props.price}</p>
-            // </div>
+                // <div className="">
+                //     <img src={props.image}></img>
+                //     <p>{props.name} </p>
+                //     <p>{props.price}</p>
+                // </div>
     
 //         </div>
 //     )

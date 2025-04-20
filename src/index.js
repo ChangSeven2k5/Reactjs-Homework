@@ -23,7 +23,6 @@ root.render(
   //   <div>
   //     <One width="200px" height="200px" backgroundColor="yellow"></One>
   //   </div>
-  
   // </div>
 );
 
