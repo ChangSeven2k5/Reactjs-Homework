@@ -11,6 +11,7 @@ function App() {
           <div id="preloder">
               <div className="loader" />
           </div>
+          
         {/* Header Section Begin */}
           <Header></Header>
         {/* Header End */}
