@@ -11,7 +11,7 @@ class RightContent extends Component {
     }
 
     componentDidMount() {
-        fetch('https://656ca88ee1e03bfd572e9c16.mockapi.io/products') // ← thay bằng URL API thật
+        fetch('https://656ca88ee1e03bfd572e9c16.mockapi.io/products') 
             .then(response => response.json())
             .then(data => {
                 const filteredData = data.map(item => ({

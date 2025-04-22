@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import LeftContent from './LeftContent.js';
+import LeftContent from './LeftContent.js';
 import RightContent from './RightContent.js';
 
 class Content extends Component {
@@ -7,7 +7,8 @@ class Content extends Component {
         return (
             <div>
                 <div id="content">
-                    <div id="left-content">
+                    <LeftContent></LeftContent>
+                    {/* <div id="left-content">
                         <h1>Category</h1>
                         <ul className="drop">
                             <li><a href="#">Menu item 1</a></li>
@@ -58,7 +59,7 @@ class Content extends Component {
                             <li><a href="#">Menu item 5</a></li>
                             <li><a href="#">Menu item 6</a></li>
                         </ul>
-                    </div>
+                    </div> */}
                     {/* <div id="right-content">
                         <h2>Product :</h2>
                         <div id="products">
