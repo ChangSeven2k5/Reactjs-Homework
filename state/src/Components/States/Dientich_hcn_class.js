@@ -26,9 +26,9 @@ class Dientich_hcn_class extends Component {
         return (
             <div>
                  <div style={{padding: '20px'}}>
-            <h2>Tính diện tích hình chữ nhật</h2>
+            <h2>Calculate Area </h2>
             <div>
-                <label>Chiều dài:</label>
+                <label>Length:</label>
                 <input 
                     type="number"
                     value={this.state.length}
@@ -36,14 +36,14 @@ class Dientich_hcn_class extends Component {
                 ></input>
             </div>
             <div>
-                <label>Chiều rộng:</label>
+                <label>Width:</label>
                 <input 
                     type="number"
                     value={this.state.width}
                     onChange={this.handleWidthChange}
                 ></input>
             </div>
-            <button onClick={this.calculateArea}>Tính diện tích</button>
+            <button onClick={this.calculateArea}>CalculateArea</button>
             <label> Area: {this.state.area}</label>
            
         </div>
