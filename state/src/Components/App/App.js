@@ -6,6 +6,8 @@ import Dientich from '../States/Dientich_hcn';
 import Dientich_hcn_class from '../States/Dientich_hcn_class';
 import State1 from '../States/State1';
 import State2_function from '../States/State2_function';
+import FetchAPI_class from '../States/FetchAPI_class';
+import FetchAPI_function from '../States/FetchAPI_function';
 function App() {
   return (
     <div className="App">
@@ -15,7 +17,9 @@ function App() {
       {/* <Dientich></Dientich> */}
       {/* <Dientich_hcn_class></Dientich_hcn_class> */}
       {/* <State1></State1> */}
-      <State2_function></State2_function>
+      {/* <State2_function></State2_function> */}
+      {/* <FetchAPI_class></FetchAPI_class> */}
+      <FetchAPI_function></FetchAPI_function>
     </div>
   );
 }
