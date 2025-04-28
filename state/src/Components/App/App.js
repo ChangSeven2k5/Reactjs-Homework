@@ -8,6 +8,8 @@ import State1 from '../States/State1';
 import State2_function from '../States/State2_function';
 import FetchAPI_class from '../States/FetchAPI_class';
 import FetchAPI_function from '../States/FetchAPI_function';
+import Form from '../Form_State/Form';
+import Form_CoresTB from '../Form_State/Form_CoresTB';
 function App() {
   return (
     <div className="App">
@@ -19,7 +21,9 @@ function App() {
       {/* <State1></State1> */}
       {/* <State2_function></State2_function> */}
       {/* <FetchAPI_class></FetchAPI_class> */}
-      <FetchAPI_function></FetchAPI_function>
+      {/* <FetchAPI_function></FetchAPI_function> */}
+      {/* <Form></Form> */}
+      <Form_CoresTB></Form_CoresTB>
     </div>
   );
 }
