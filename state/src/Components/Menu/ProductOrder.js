@@ -44,38 +44,42 @@ const ProductOrder = () => {
   };
 
   return (
-    <div style={{ padding: "20px", fontFamily: "Arial" }}>
-      <h2>Danh sách sản phẩm</h2>
-      {products.map(product => (
-        <div key={product.id} style={{ marginBottom: "8px" }}>
-          <input
-            type="checkbox"
-            id={`product-${product.id}`}
-            checked={selectedProducts.includes(product.id)}
-            onChange={() => handleCheckboxChange(product.id)}
-          />
-          <label htmlFor={`product-${product.id}`}>
-            {product.name} - {product.price.toLocaleString()} VND
-          </label>
-        </div>
-      ))}
+    <div className="container my-4" style={{ fontFamily: "Arial" }}>
+      <h2 className="mb-4 text-center">Danh sách sản phẩm</h2>
+      <div className="list-group">
+        {products.map(product => (
+          <div key={product.id} className="list-group-item d-flex align-items-center" style={{ paddingLeft: '20px' }}>
+            <input
+              type="checkbox"
+              id={`product-${product.id}`}
+              checked={selectedProducts.includes(product.id)}
+              onChange={() => handleCheckboxChange(product.id)}
+              className="form-check-input" 
+            />
+            <label htmlFor={`product-${product.id}`} className="form-check-label">
+              {product.name} - {product.price.toLocaleString()} VND
+            </label>
+          </div>
+        ))}
+      </div>
 
-      <br />
-      <div>
-        <label htmlFor="money">Nhập số tiền bạn hiện có: </label>
+      <div className="my-3">
+        <label htmlFor="money" className="form-label">Nhập số tiền bạn hiện có:</label>
         <input
           type="number"
           id="money"
           value={money}
           onChange={(e) => setMoney(e.target.value)}
           min="0"
+          className="form-control"
         />
       </div>
 
-      <br />
-      <button onClick={handleOrder}>Đặt hàng</button>
+      <div className="text-center">
+        <button onClick={handleOrder} className="btn btn-primary">Đặt hàng</button>
+      </div>
 
-      <h3 style={{ marginTop: "20px", color: "green" }}>{result}</h3>
+      <h3 className="mt-4 text-center" style={{ color: "green" }}>{result}</h3>
     </div>
   );
 };
