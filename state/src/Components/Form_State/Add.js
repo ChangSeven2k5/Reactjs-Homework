@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import Data from "./Data";
 
 class Add extends Component {
