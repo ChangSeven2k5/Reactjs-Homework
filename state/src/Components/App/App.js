@@ -1,31 +1,21 @@
-import './App.css';
-import Member from '../States/Member'
-import Counter from '../States/Counter';
-import { Counter_function } from '../States/Counter_function';
-import Dientich from '../States/Dientich_hcn';
-import Dientich_hcn_class from '../States/Dientich_hcn_class';
-import State1 from '../States/State1';
-import State2_function from '../States/State2_function';
-import FetchAPI_class from '../States/FetchAPI_class';
-import FetchAPI_function from '../States/FetchAPI_function';
-import Form from '../Form_State/Form';
-import Form_CoresTB from '../Form_State/Form_CoresTB';
-function App() {
-  return (
-    <div className="App">
-      {/* <Member></Member>
-      <Counter></Counter> */}
-      {/* <Counter_function></Counter_function> */}
-      {/* <Dientich></Dientich> */}
-      {/* <Dientich_hcn_class></Dientich_hcn_class> */}
-      {/* <State1></State1> */}
-      {/* <State2_function></State2_function> */}
-      {/* <FetchAPI_class></FetchAPI_class> */}
-      {/* <FetchAPI_function></FetchAPI_function> */}
-      {/* <Form></Form> */}
-      <Form_CoresTB></Form_CoresTB>
-    </div>
-  );
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Routes is used instead of Switch
+import Add from '../Form_State/Add';
+import ProductList from '../Form_State/ProductList';
+
+class App extends React.Component {
+  render() {
+    return (
+      <Router>
+        <div className="App">
+          <Routes> {/* Switch is replaced by Routes */}
+            <Route path="/add" element={<Add />} /> {/* Route component now uses element prop */}
+            <Route path="/products" element={<ProductList />} /> {/* Route component now uses element prop */}
+          </Routes>
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;
