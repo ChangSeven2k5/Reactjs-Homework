@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  background-color: #7f565687;
+  color: #282c34;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Đặt kiểu cho các mục nav-item */
+.nav-item {
+  list-style-type: none;
+}
+
+/* Màu sắc mặc định cho các liên kết */
+.nav-link {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+
+.nav-link.active {
+  color: #eb9f24 !important; 
+  border-bottom: 2px solid #eb9f24;  
+}
+
